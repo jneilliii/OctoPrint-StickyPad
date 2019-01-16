@@ -1,0 +1,8 @@
+div.ui-pnotify.stickypad > div > div.ui-pnotify-text {
+	padding-right: 15px;
+}
+
+div.ui-pnotify.stickypad > div > div.ui-pnotify-text > textarea.stickypad_text {
+	height: 95%;
+	width: 95%;
+}
