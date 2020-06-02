@@ -27,7 +27,7 @@ class StickypadPlugin(octoprint.plugin.SettingsPlugin,
 	def get_update_information(self):
 		return dict(
 			stickypad=dict(
-				displayName="StickyPad",
+				displayName="Sticky Pad",
 				displayVersion=self._plugin_version,
 
 				# version check: github repository
@@ -41,7 +41,7 @@ class StickypadPlugin(octoprint.plugin.SettingsPlugin,
 			)
 		)
 
-__plugin_name__ = "StickyPad"
+__plugin_name__ = "Sticky Pad"
 __plugin_pythoncompat__ = ">=2.7,<4"
 
 def __plugin_load__():
