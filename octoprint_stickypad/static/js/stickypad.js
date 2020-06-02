@@ -46,6 +46,9 @@ $(function() {
 					history: false
 				}
 			});
+		}
+		
+		self.onStartupComplete = function(){
 			$('div.ui-pnotify.stickypad > div > div.ui-pnotify-text').height(function(){return parseInt($(this).parent().height() - 40) + 'px'});
 			$('div.ui-pnotify.stickypad > div > div.ui-pnotify-text').width(function(){return parseInt($(this).parent().width()) + 'px'});
 		}
