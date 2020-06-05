@@ -6,3 +6,12 @@ div.ui-pnotify.stickypad > div > div.ui-pnotify-text > textarea.stickypad_text {
 	height: 95%;
 	width: 95%;
 }
+
+#stickypadbuttonpanel {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+}

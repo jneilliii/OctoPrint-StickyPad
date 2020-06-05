@@ -18,9 +18,17 @@ class StickypadPlugin(octoprint.plugin.SettingsPlugin,
 
 	def get_assets(self):
 		return dict(
-			js=["js/stickypad.js"],
-			css=["css/stickypad.css"]
+			js=["js/stickypad.js","js/quill.min.js"],
+			css=["css/stickypad.css","css/quill.snow.css"]
 		)
+
+	##~~ TemplatePlugin mixin
+	def get_template_configs(self):
+		return [
+			dict(type="general", custom_bindings=True),
+			dict(type="navbar", custom_bindings=True, classes=["dropdown"]),
+			dict(type="settings", custom_bindings=False)
+		]
 
 	##~~ Softwareupdate hook
 
