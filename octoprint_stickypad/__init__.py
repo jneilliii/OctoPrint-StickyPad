@@ -26,8 +26,7 @@ class StickypadPlugin(octoprint.plugin.SettingsPlugin,
 	def get_template_configs(self):
 		return [
 			dict(type="general", custom_bindings=True),
-			dict(type="navbar", custom_bindings=True, classes=["dropdown"]),
-			dict(type="settings", custom_bindings=False)
+			dict(type="navbar", custom_bindings=True, classes=["dropdown"])
 		]
 
 	##~~ Softwareupdate hook

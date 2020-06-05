@@ -14,11 +14,7 @@ plugin_package = "octoprint_stickypad"
 plugin_name = "Sticky Pad"
 
 # The plugin's version. Can be overwritten within OctoPrint's internal data via __plugin_version__ in the plugin module
-<<<<<<< HEAD
 plugin_version = "0.1.3"
-=======
-plugin_version = "0.1.2"
->>>>>>> cd55226c32c87eb2336cbb67cf2cfe70d4500ebb
 
 # The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
 # module
