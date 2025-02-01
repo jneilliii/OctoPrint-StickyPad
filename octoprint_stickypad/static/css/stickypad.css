@@ -15,3 +15,7 @@ div.ui-pnotify.stickypad > div > div.ui-pnotify-text > textarea.stickypad_text {
 	-moz-border-radius: 0 0 6px 6px;
 	border-radius: 0 0 6px 6px;
 }
+
+#stickypadbuttonpanel div.ql-toolbar {
+    background: white;
+}
