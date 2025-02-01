@@ -1,5 +1,5 @@
 <div id="stickypadbuttonpanel" class="modal" style="display: none;">
 	<div class="modal-header">Sticky Pad</div>
 	<div class="modal-body"><div id="editor-container"></div></div>
-	<div class="modal-footer"><button class="btn pull-left" data-bind="click: closeEditor">Cancel</button><button class="btn btn-primary pull-right" data-bind="click: saveNote"><i class="fa fa-spinner fa-spin" data-bind="visible: saving" style="display: none;"></i> Save</button></div>
+	<div class="modal-footer"><button class="btn pull-left" data-bind="click: closeEditor">Cancel</button><button class="btn btn-primary pull-right" data-bind="click: saveNote, visible: loginStateViewModel.hasPermission(accessViewModel.permissions.PLUGIN_STICKYPAD_NOTES)"><i class="fa fa-spinner fa-spin" data-bind="visible: saving" style="display: none;"></i> Save</button></div>
 </div>
