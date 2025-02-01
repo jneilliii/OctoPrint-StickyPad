@@ -52,7 +52,8 @@ class StickypadPlugin(octoprint.plugin.SettingsPlugin,
 			self._settings.save()
 			return flask.jsonify({"success": True})
 		elif command == 'save_file_note':
-			pass
+			self._file_manager.set_additional_metadata("local", data.get("file_path"), "stickypad_note", data.get("note"), overwrite=True)
+			return flask.jsonify({"success": True})
 
 	##~~ Access Permissions Hook
 
