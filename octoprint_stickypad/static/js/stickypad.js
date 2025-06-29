@@ -39,7 +39,7 @@ $(function () {
 
         self.showEditor = function (data) {
             self.editing_file(false);
-            self.quill.setContents(ko.toJS(self.note()));
+            self.quill.setContents(self.quill.clipboard.convert({html: ko.toJS(self.note())}));
             $('#navbar_plugin_stickypad').addClass('open');
             $('#stickypadbuttonpanel').slideDown('slow');
         };
@@ -47,7 +47,7 @@ $(function () {
         self.closeEditor = function (data) {
             $('#stickypadbuttonpanel').slideUp('slow', function () {
                 $('#navbar_plugin_stickypad').removeClass('open');
-                self.quill.setContents(ko.toJS(self.note()));
+                self.quill.setContents(self.quill.clipboard.convert({html: ko.toJS(self.note())}));
             });
         };
 
